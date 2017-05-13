@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Tema 3</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+</head> 
+<body>
+    <div class="container">
+		<div class="jumbotron" style="background-color:#0d47a1  ;color:#ffffff">
+			<h1 class="align-center" style="font-family:'Roboto';font-size:60px;">Share your music!</h1>
+		</div>
+		<div>
+			<ul class="list-group" role="group" id="songs-list">
+				<li class="list-group-item col-md-10" style="margin-right:5px">
+					<span class="badge">7</span>
+					Mazzy Star - Look On Down From The Bridge				
+				</li>
+				<div class="rating-buttons">
+					<button type="button" class="btn btn-default btnUp">Up</button>
+					<button type="button" class="btn btn-default btnDown">Down</button>
+				</div>
+				<div class="clear"/>
+				<li class="list-group-item col-md-10" style="margin-right:5px">
+					<span class="badge">6</span>
+					Run The Jewels - Blockbuster Night Part 1				
+				</li>
+				<div class="rating-buttons">
+					<button type="button" class="btn btn-default btnUp">Up</button>
+					<button type="button" class="btn btn-default btnDown">Down</button>
+				</div>
+				<div class="clear"/>
+				<li class="list-group-item col-md-10" style="margin-right:5px">
+					<span class="badge">5</span>
+					Death Grips - Eh				
+				</li>
+				<div class="rating-buttons">
+					<button type="button" class="btn btn-default btnUp">Up</button>
+					<button type="button" class="btn btn-default btnDown">Down</button>
+				</div>
+				<div class="clear"/>
+			</ul>
+		</div>
+		<div class="clear"/>
+		<div>
+			<div class="input-group">
+			  <span class="input-group-btn">
+				<button class="btn btn-default" type="button">Submit</button>
+			  </span>
+			  <input type="text" class="form-control" placeholder="Artist - Song">
+			</div><!-- /input-group -->
+		</div>
+		
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

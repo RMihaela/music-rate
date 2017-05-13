@@ -1,0 +1,18 @@
+1. descarca nodejs de aici: https://nodejs.org/en/
+2. creeaza un dosar al proiectului, gol
+3. ruleaza cmd ca admin (click dreapta pe butonul de start, „Command Prompt(Admin)” 
+	si du-te in dosarul creat la pasul 2.
+4. ruleaza din cmd comanda „npm init” (NPM = Node Project Manager)
+	- la prima chestie trebuie sa introduci numele proiectului, apoi sa dai enter.
+	- dupa asta, poti sa dai enter la toate.
+	- de asemenea, poti schimba informatiile de acolo daca vrei.
+5. ruleaza din cmd „npm install --save ws” (ws = WebSockets)
+6. „npm install express --save” (Express = librarie care lucreaza cu WebSockets)
+7. tot in dosarul proiectului, creeaza fisierul „server.js” si copiaza codul de la ExpressJS example de aici:
+	- https://github.com/websockets/ws/blob/master/README.md#expressjs-example
+	- acesta va fi fisierul server.
+8. ruleaza fisierul in cmd, prin comanda „node server.js”
+9. creaza fisierul „index.js” si introdu in el datele de aici:
+	- https://www.dropbox.com/s/9mc280kr4ed7o02/index.js?dl=0
+	- acesta va fi fisierul client.
+	
