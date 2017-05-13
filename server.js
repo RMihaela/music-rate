@@ -1,12 +1,7 @@
-const express = require('express');
-const http = require('http');
+const app = require('express')();
+const server = require('http').createServer(app);
 const url = require('url');
-const WebSocket = require('ws');
-
-const app = express();
-
-const server = http.createServer(app);
-const wss = new WebSocket.Server({server});
+const ws = require('socket.io')(server);
 
 var clients = [];
 var scores_dict = {};
@@ -20,7 +15,7 @@ scores_dict['6'] = 0;
 function updateClients() {
 	for (client in clients) {
 		try {
-			clients[client].send(JSON.stringify(scores_dict));
+			clients[client].emit(JSON.stringify(scores_dict));
 		} catch (e) {
 
 		}
@@ -29,7 +24,7 @@ function updateClients() {
 
 function updateClient(client) {
 	try {
-		client.send(JSON.stringify(scores_dict));
+		client.emit(JSON.stringify(scores_dict));
 	} catch (e) {
 		
 	}
