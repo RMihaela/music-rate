@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var ws = new WebSocket('ws://localhost:8080');
+    var ws = io('http://localhost:8080');
 
     var groupStr = '';
     var groupNumber = 0;
